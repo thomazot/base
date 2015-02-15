@@ -1,3 +1,7 @@
 node_modules/
 bower_components/
 .tmp/
+.idea/
+*/.DS_Store
+.DS_Store
+.DS_Store?
