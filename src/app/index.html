@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html ng-app="base">
-  <head>
-    <meta charset="utf-8"/>
-    <title>base</title>
-    <!-- inject:vendor:css -->
-    <!-- endinject -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="/css/app.css">
-    <!-- endinject -->
-  </head>
-  <body>
-    <h1>base</h1>
-    <h2>Your new AngularJS app is now ready...</h2>
-    <ng-view></ng-view>
-    <!-- inject:vendor:js -->
-    <script src="/angular/angular.js"></script>
-    <script src="/angular-route/angular-route.js"></script>
-    <!-- endinject -->
-    <!-- inject:js -->
-    <script src="/controllers/controllers.js"></script>
-    <script src="/app.js"></script>
-    <!-- endinject -->
-  </body>
+    <head>
+        <meta charset="utf-8"/>
+        <title>base</title>
+        <!-- inject:vendor:css -->
+        <!-- endinject -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="/css/app.css">
+        <!-- endinject -->
+    </head>
+    <body>
+        <div class="container-header" ng-include="'views/partials/header.html'"></div>
+        <ng-view></ng-view>
+        <div class="container-footer" ng-include="'views/partials/footer.html'"></div>
+        <!-- inject:vendor:js -->
+        <script src="/angular/angular.js"></script>
+        <script src="/angular-route/angular-route.js"></script>
+        <!-- endinject -->
+        <!-- inject:js -->
+        <script src="/controllers/controllers.js"></script>
+        <script src="/app.js"></script>
+        <script src="/base-templates.js"></script>
+        <!-- endinject -->
+    </body>
 </html>
